@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /g5a2qw68
+Disallow: /
+

@@ -1,0 +1,26 @@
+{
+  "name": "athere.me",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "~4.0.0",
+    "body-parser": "~1.0.0",
+    "method-override": "~1.0.0",
+    "express-session": "~1.0.0",
+    "cookie-parser": "~1.0.0",
+    "static-favicon": "~1.0.0",
+    "errorhandler": "~1.0.0",
+    "connect": "*",
+    "connect-multiparty": "~1.0.0",
+    "jade": "*",
+    "async": "~0.2.8",
+    "string": "~1.7.0",
+    "winston": "~0.7.2",
+    "nconf": "~0.6.7",
+    "dbox": "0.6.1",
+    "redis": "*"
+  }
+}

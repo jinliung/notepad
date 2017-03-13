@@ -1,0 +1,37 @@
+doctype html
+html
+	head
+		title #{id}
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		link(href="/css/css.css" type="text/css" rel="stylesheet" )
+		link(rel="shortcut icon" href="/a/fav.ico" )
+	body
+		div.header
+			div.op
+				input#psw(type='password' placeholder='* * * *')
+				a.save(href='javascript:;' title='保存') S
+				if needpsw == 1
+					a.decrypt(href='javascript:;' title='解锁') K
+				if needpsw != 1 && readonly == null
+					a.read.cir(href='javascript:;' title='设置只读密码') R
+				else
+					a.write.cir(href='javascript:;' title='编辑') W
+				a.new.cir(href='/' target='_blank' title='新建') +
+				a.cir(href='/g5a2qw68' target='_blank' title='说明') ?
+				a.cir.setting(href='javascript:;') ...
+				div.msg
+				div.hidden.settings
+					a.cir.qr(href='/#{id}/qrcode' target='_blank' title='本页二维码') Q
+					a.cir.db(href='/#{id}/db' target='_blank' title='保存到Dropbox') B
+					a.cir.bd(href='/download/#{id}' target='_blank' title='下载到本地') D
+					a.cir.bd(href='/upload' target='_blank' title='上传') U
+					a.cir.bd(href='/raw/#{id}' target='_blank' title='Raw/纯文本') T
+		if needpsw != 1 && readonly == null
+			div#editor(contentEditable) !{content}
+		else
+			div#editor !{content}
+		script(type='text/javascript' src='/js/jquery.js')
+		script(type='text/javascript' src='/js/js.js')
+		script(type='text/javascript').
+			var needpsw = 1 == #{needpsw}, pswconfirm = false, readonly = #{(readonly != null && readonly.length > 0) }, pageid = '#{id}';

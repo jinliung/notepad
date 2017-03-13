@@ -1,0 +1,14 @@
+body{padding:0;margin:0;font-family:"Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "sans-serif";font-size:16px;color:#545454;background-color:#fafafa;}
+a{color:#545454;text-decoration:none;}
+.header{width:100%;height:40px;line-height:40px;background-color:#e4eef5;padding:10px;border-bottom:1px solid #d3dde4;position:fixed;top:0;}
+.header .logo{font-size:28px;}
+.header .op a{padding: 0 10px;font-size:18px;text-shadow: 0 1px 0 #eee;}
+.header .op a.cir{font-size:20px;  }
+.header .op a.setting{ float:right;padding:0 20px;font-weight:bold;display: inline-block; line-height: 8px; width: 10px; word-wrap: break-word;}
+.header .op .settings a{font-size:20px;}
+#psw{width:60px;height:20px;padding:0 5px; border:none; border-bottom:1px solid #d3dde4; background-color:#e4eef5;}
+#editor{min-height:400px;padding:30px 20px;font-size:14px;line-height:24px;border-top:solid 1px #d3dde4;margin-top:60px;}
+#editor a{color:#666;}
+.settings{display:inline-block;height:20px;line-height:20px;background-color:#e4eef5;float:right;padding:10px;}
+.msg{color:#666;word-wrap: no-wrap;display:inline-block;}
+.hidden{display:none;}

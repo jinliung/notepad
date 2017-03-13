@@ -1,0 +1,17 @@
+doctype html
+html
+	head
+		title 上传
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		style.
+			#con{;width:150px;height:100px;margin:40px auto;position:relative;}
+			.sub{width:120px;height:50px;line-height:50px;text-align:center;background-color:#d3dde4;border:0;color:#333;}
+			.file{width:150px; height:50px; position:absolute; top:0; left:0; opacity: 0;background:#d3dde4;border:0;}
+	body
+		div#con
+			form#form(action='/up' method='post' enctype='multipart/form-data')
+					input.file(type='file' name='txt' onchange='javascript:upload()')
+					div.sub 选择并上传 
+		script(type='text/javascript').
+			function upload(){document.getElementById('form').submit()};

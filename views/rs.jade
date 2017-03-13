@@ -1,0 +1,13 @@
+doctype html
+html
+	head 
+		title #{msg}
+		style.
+			body{margin:40px;font-size:16px;color:#545454;background-color:#fafafa;text-align:center;}
+	body
+		div #{msg}
+		script.
+			window.onload = function(){
+				setTimeout(function(){close();},3000);
+			};
+			

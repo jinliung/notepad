@@ -1,0 +1,19 @@
+doctype html
+html
+	head
+		title #{id}二维码
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		style.
+			#qrcode{padding:40px;width:150px;margin:0 auto;}
+	body
+		div#qrcode
+		script(type='text/javascript' src='/js/qrcode.min.js')
+		script(type='text/javascript').
+			window.onload = function(){
+				var qrcode = new QRCode(document.getElementById("qrcode"), {
+					width : 150,
+					height : 150
+				});
+				qrcode.makeCode('https://i.athere.me/#{id}');
+			}
